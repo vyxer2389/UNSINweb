@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSIN | Unidad de Seguridad Inteligente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="images/favicon.png">
+
+    <style>
+        /*
+         * Paleta de colores basada en el logo:
+         * Primario (Azul Marino): #0D47A1
+         * Secundario (Dorado): #FFD700
+         */
+
+        /* Estilos generales para un look profesional y tecnológico */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Estilos del encabezado (Hero Section) */
+        header {
+            background-color: #000000; /* Fondo negro para contraste y seriedad */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bg-tech.jpg'); /* Imagen de fondo opcional */
+            background-size: cover;
+            color: #fff;
+        }
+        
+        /* Estilos para el botón principal */
+        .btn-primary {
+            background-color: #FFD700; /* Dorado como acento principal */
+            border-color: #FFD700;
+            color: #000; /* Texto oscuro para el botón dorado */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6c200;
+            border-color: #e6c200;
+            color: #000;
+        }
+
+        /* Estilos para los íconos de características */
+        #servicios i {
+            color: #0D47A1 !important; /* Azul Marino para íconos */
+        }
+        
+        /* Contenedor del formulario de contacto */
+        #contacto {
+            background-color: #f8f9fa; /* Gris claro de Bootstrap */
+        }
+        
+        #contacto .card {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra elegante */
+            border: none;
+        }
+        
+        .btn-success {
+            background-color: #0D47A1;
+            border-color: #0D47A1;
+        }
+        .btn-success:hover {
+            background-color: #09377A;
+            border-color: #09377A;
+        }
+
+        /* Estilo para el logo (si se usa la imagen del usuario) */
+        .logo-unsin {
+             max-width: 250px;
+             height: auto;
+             filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); /* Sombra para resaltar el dorado */
+        }
+    </style>
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">UNSIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="text-white text-center py-5">
+        <div class="container py-5">
+            <img src="images/logo.png" alt="Logo UNSIN" class="logo-unsin mb-4"> 
+            <h1 class="display-3 fw-bold">Seguridad Elevada por la Inteligencia</h1>
+            <p class="lead mb-4">UNSIN combina **ciberseguridad, IA y respuesta física** para asegurar su futuro con la máxima eficiencia.</p>
+            <a href="#contacto" class="btn btn-primary btn-lg rounded-pill">Solicitar Demo y Evaluación Gratuita</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Nuestra Tecnología, Resultados Superiores</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-robot display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Modelos Predictivos con IA</h3>
+                    <p>Anticípese a las amenazas. Usamos Inteligencia Artificial para identificar patrones de riesgo antes de que ocurran.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-headset display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Central de Monitoreo 24/7</h3>
+                    <p>Respuesta inmediata garantizada. Nuestros expertos y sistemas están en alerta constante, día y noche.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-cpu display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Integración Tecnológica Total</h3>
+                    <p>Unificamos cámaras, sensores y sistemas de acceso en una plataforma inteligente y fácil de gestionar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Póngase en Contacto con un Experto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card p-4">
+                        <h4 class="card-title text-center mb-3">Solicitar una Evaluación de Riesgos Gratuita</h4>
+                        <form id="formulario-contacto">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+                            <button type="submit" class="btn btn-success w-100 mt-2 fw-bold">Recibir Llamada de un Asesor</button>
+                        </form>
+                        <div id="mensaje-exito" class="alert alert-success mt-3 text-center d-none" role="alert">
+                            ✅ ¡Solicitud Enviada! Gracias por contactarnos. Un asesor de UNSIN se comunicará contigo pronto.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2024 UNSIN | Unidad de Seguridad Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Espera a que todo el contenido del DOM esté cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('formulario-contacto');
+            const mensajeExito = document.getElementById('mensaje-exito');
+
+            // Manejador de evento para la sumisión del formulario
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Detiene el envío estándar del formulario (sin recargar)
+
+                // Validación simple de campos requeridos
+                const nombre = document.getElementById('nombre').value.trim();
+                const correo = document.getElementById('correo').value.trim();
+                
+                if (nombre === '' || correo === '' || !correo.includes('@')) {
+                    alert('Por favor, completa correctamente los campos Nombre y Correo Electrónico.');
+                    return; // Detiene la ejecución si la validación falla
+                }
+
+                // **Simulación de envío de datos**
+                console.log('Datos de Contacto Recibidos:');
+                console.log('Nombre:', nombre);
+                console.log('Correo:', correo);
+                console.log('Teléfono:', document.getElementById('telefono').value.trim());
+
+                // Oculta el formulario y muestra el mensaje de éxito
+                form.classList.add('d-none'); // d-none es una clase de Bootstrap para 'display: none'
+                mensajeExito.classList.remove('d-none');
+
+                // Desplazamiento suave al mensaje de éxito
+                mensajeExito.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Nota: En un entorno de producción, aquí se realizaría una llamada
+                // asíncrona (AJAX/Fetch) a un servidor para guardar los datos.
+            });
+        });
+    </script>
+    </body>
+</html>
