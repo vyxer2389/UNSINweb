@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNSIN | Unidad de Seguridad Inteligente</title>
+    <title>UNSIN | Seguridad Privada e Inteligente con Tecnología IA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="images/favicon.png">
 
     <style>
         /*
-         * Paleta de colores basada en el logo:
-         * Primario (Azul Marino): #0D47A1
-         * Secundario (Dorado): #FFD700
+         * Paleta de colores: Azul Marino (#0D47A1) y Dorado/Amarillo (#FFD700)
          */
 
         body {
@@ -21,10 +19,13 @@
 
         /* Estilos del encabezado (Hero Section) */
         header {
-            background-color: #000000;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bg-tech.jpg');
+            background-color: #0D47A1; /* Azul Marino de Seguridad */
+            background-image: linear-gradient(rgba(13, 71, 161, 0.85), rgba(0, 0, 0, 0.85)), url('images/bg-tech.jpg'); /* Fondo oscuro con overlay azul */
             background-size: cover;
+            background-position: center;
             color: #fff;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
         
         /* Estilos para el botón principal (Dorado) */
@@ -33,7 +34,149 @@
             border-color: #FFD700;
             color: #000;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6c200;
+            border-color: #e6c200;
+            color: #000;
+        }
+
+        /* Estilos para los íconos de características */
+        #servicios i {
+            color: #0D47A1 !important; /* Azul Marino para íconos */
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Contenedor de la llamada a la acción */
+        #cta-whatsapp {
+            background-color: #09377A; /* Tono de azul ligeramente diferente */
+        }
+        
+        /* Estilos del Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            color: #FFF;
+            transform: scale(1.1);
+        }
+
+        /* Botón de WhatsApp en la sección CTA */
+        .btn-whatsapp-cta {
+            background-color: #25d366;
+            border-color: #25d366;
+            color: #FFF;
+            font-size: 1.25rem;
+        }
+        .btn-whatsapp-cta:hover {
+            background-color: #128C7E;
+            border-color: #128C7E;
+            color: #FFF;
+        }
+    </style>
+    </head>
+<body>
+
+    <a href="https://wa.me/TUNUMERO?text=Hola%2C%20quisiera%20una%20consulta%20sobre%20sus%20servicios%20de%20seguridad%20con%20Inteligencia%20Artificial." class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">UNSIN | Tecnología de Seguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Ventajas IA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta-whatsapp">Contacto Rápido</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="text-white text-center">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bolder">UNSIN: Seguridad Privada Optimizada por IA</h1>
+            <p class="lead mb-4 fw-light">Elevamos su protección con **Inteligencia Artificial y Análisis Predictivo**. Obteniendo **mayor precisión** y **menores falsas alarmas** que la seguridad tradicional.</p>
+            <a href="#cta-whatsapp" class="btn btn-primary btn-lg rounded-pill shadow-lg">
+                Agenda tu Consultoría GRATIS
+            </a>
+            <p class="mt-3 small fst-italic">Protección 24/7 con Vigilancia Inteligente.</p>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-dark">La Diferencia de la IA en la Seguridad Privada</h2>
+            <div class="row text-center">
+                
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-graph-up-arrow display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Detección Predictiva</h3>
+                    <p>Nuestros algoritmos de IA analizan patrones de comportamiento y datos históricos para **predecir riesgos** y asignar recursos antes de un incidente.</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-camera-video display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Vigilancia con Video Analítico</h3>
+                    <p>Reducimos las falsas alarmas en un 95%. La IA distingue entre ramas, animales y amenazas humanas reales, centrando la atención de nuestros guardias.</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-speedometer display-3"></i>
+                    <h3 class="mt-3 fs-5 fw-bold">Respuesta Rápida y Optimizada</h3>
+                    <p>Las alertas de IA son instantáneas y priorizadas, permitiendo a nuestro personal responder de manera más rápida, estratégica y eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-whatsapp" class="text-white text-center py-5">
+        <div class="container">
+            <h2 class="mb-3">¿Listo para una Seguridad de Última Generación?</h2>
+            <p class="lead mb-4">Hable directamente con un consultor de UNSIN. Le explicaremos cómo la IA puede reducir sus costos y aumentar su protección.</p>
+            <a href="https://wa.me/TUNUMERO?text=Hola%2C%20quisiera%20una%20consulta%20sobre%20sus%20servicios%20de%20seguridad%20con%20Inteligencia%20Artificial." target="_blank" class="btn btn-whatsapp-cta btn-lg rounded-pill shadow-lg">
+                <i class="bi bi-whatsapp me-2"></i> Contáctanos Ahora
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2024 UNSIN | Seguridad Privada Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
         }
 
         .btn-primary:hover {
