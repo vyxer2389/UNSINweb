@@ -15,24 +15,23 @@
          * Secundario (Dorado): #FFD700
          */
 
-        /* Estilos generales para un look profesional y tecnológico */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         /* Estilos del encabezado (Hero Section) */
         header {
-            background-color: #000000; /* Fondo negro para contraste y seriedad */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bg-tech.jpg'); /* Imagen de fondo opcional */
+            background-color: #000000;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bg-tech.jpg');
             background-size: cover;
             color: #fff;
         }
         
-        /* Estilos para el botón principal */
+        /* Estilos para el botón principal (Dorado) */
         .btn-primary {
-            background-color: #FFD700; /* Dorado como acento principal */
+            background-color: #FFD700;
             border-color: #FFD700;
-            color: #000; /* Texto oscuro para el botón dorado */
+            color: #000;
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
@@ -48,34 +47,55 @@
             color: #0D47A1 !important; /* Azul Marino para íconos */
         }
         
-        /* Contenedor del formulario de contacto */
-        #contacto {
-            background-color: #f8f9fa; /* Gris claro de Bootstrap */
+        /* Contenedor de la llamada a la acción */
+        #cta-whatsapp {
+            background-color: #0D47A1; /* Fondo azul oscuro */
         }
         
-        #contacto .card {
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra elegante */
-            border: none;
-        }
-        
-        .btn-success {
-            background-color: #0D47A1;
-            border-color: #0D47A1;
-        }
-        .btn-success:hover {
-            background-color: #09377A;
-            border-color: #09377A;
+        /* Estilos del Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
         }
 
-        /* Estilo para el logo (si se usa la imagen del usuario) */
-        .logo-unsin {
-             max-width: 250px;
-             height: auto;
-             filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); /* Sombra para resaltar el dorado */
+        .whatsapp-float:hover {
+            color: #FFF;
+            transform: scale(1.1);
+        }
+
+        /* Botón de WhatsApp en la sección CTA */
+        .btn-whatsapp-cta {
+            background-color: #25d366;
+            border-color: #25d366;
+            color: #FFF;
+            font-size: 1.25rem;
+        }
+        .btn-whatsapp-cta:hover {
+            background-color: #128C7E;
+            border-color: #128C7E;
+            color: #FFF;
         }
     </style>
     </head>
 <body>
+
+    <a href="https://wa.me/TUNUMERO?text=Hola%2C%20estoy%20interesado%20en%20los%20servicios%20de%20seguridad%20inteligente%20de%20UNSIN." class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -89,7 +109,7 @@
                         <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#cta-whatsapp">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -98,10 +118,10 @@
     
     <header class="text-white text-center py-5">
         <div class="container py-5">
-            <img src="logo.png" alt="Logo UNSIN" class="logo-unsin mb-4"> 
+            <img src="logo.png" alt="Logo UNSIN" class="logo-unsin mb-4" style="max-width: 250px;"> 
             <h1 class="display-3 fw-bold">Seguridad Elevada por la Inteligencia</h1>
             <p class="lead mb-4">UNSIN combina **ciberseguridad, IA y respuesta física** para asegurar su futuro con la máxima eficiencia.</p>
-            <a href="#contacto" class="btn btn-primary btn-lg rounded-pill">Solicitar Demo y Evaluación Gratuita</a>
+            <a href="#cta-whatsapp" class="btn btn-primary btn-lg rounded-pill">¡Comience su Evaluación Ahora!</a>
         </div>
     </header>
 
@@ -128,34 +148,13 @@
         </div>
     </section>
 
-    <section id="contacto" class="py-5">
+    <section id="cta-whatsapp" class="text-white text-center py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Póngase en Contacto con un Experto</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <div class="card p-4">
-                        <h4 class="card-title text-center mb-3">Solicitar una Evaluación de Riesgos Gratuita</h4>
-                        <form id="formulario-contacto">
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre Completo</label>
-                                <input type="text" class="form-control" id="nombre" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="correo" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="correo" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono">
-                            </div>
-                            <button type="submit" class="btn btn-success w-100 mt-2 fw-bold">Recibir Llamada de un Asesor</button>
-                        </form>
-                        <div id="mensaje-exito" class="alert alert-success mt-3 text-center d-none" role="alert">
-                            ✅ ¡Solicitud Enviada! Gracias por contactarnos. Un asesor de UNSIN se comunicará contigo pronto.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="mb-3">Contacto Directo: Hable con un Experto</h2>
+            <p class="lead mb-4">¿Tiene preguntas o necesita una cotización? Nuestro equipo está listo para responderle por WhatsApp ahora mismo.</p>
+            <a href="https://wa.me/TUNUMERO?text=Hola%2C%20estoy%20interesado%20en%20los%20servicios%20de%20seguridad%20inteligente%20de%20UNSIN." target="_blank" class="btn btn-whatsapp-cta btn-lg rounded-pill">
+                <i class="bi bi-whatsapp me-2"></i> Chatear con UNSIN
+            </a>
         </div>
     </section>
 
@@ -167,42 +166,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script>
-        // Espera a que todo el contenido del DOM esté cargado
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('formulario-contacto');
-            const mensajeExito = document.getElementById('mensaje-exito');
-
-            // Manejador de evento para la sumisión del formulario
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Detiene el envío estándar del formulario (sin recargar)
-
-                // Validación simple de campos requeridos
-                const nombre = document.getElementById('nombre').value.trim();
-                const correo = document.getElementById('correo').value.trim();
-                
-                if (nombre === '' || correo === '' || !correo.includes('@')) {
-                    alert('Por favor, completa correctamente los campos Nombre y Correo Electrónico.');
-                    return; // Detiene la ejecución si la validación falla
-                }
-
-                // **Simulación de envío de datos**
-                console.log('Datos de Contacto Recibidos:');
-                console.log('Nombre:', nombre);
-                console.log('Correo:', correo);
-                console.log('Teléfono:', document.getElementById('telefono').value.trim());
-
-                // Oculta el formulario y muestra el mensaje de éxito
-                form.classList.add('d-none'); // d-none es una clase de Bootstrap para 'display: none'
-                mensajeExito.classList.remove('d-none');
-
-                // Desplazamiento suave al mensaje de éxito
-                mensajeExito.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-                // Nota: En un entorno de producción, aquí se realizaría una llamada
-                // asíncrona (AJAX/Fetch) a un servidor para guardar los datos.
-            });
-        });
-    </script>
     </body>
 </html>
