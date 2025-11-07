@@ -10,17 +10,27 @@
 
     <style>
         /*
-         * Paleta de colores: Azul Marino (#0D47A1) y Dorado/Amarillo (#FFD700)
+         * Paleta de colores: 
+         * Fondo Oscuro/Negro: #111111 (Casi negro, mejor para texto)
+         * Azul Marino: #0D47A1
+         * Dorado/Amarillo: #FFD700
          */
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000; /* Fondo general negro */
+            color: #FFFFFF; /* Color de texto predeterminado blanco */
         }
 
-        /* Estilos del encabezado (Hero Section) */
+        /* 1. Barra de Navegación */
+        .navbar {
+            background-color: #000000 !important; /* Barra de navegación negra */
+        }
+
+        /* 2. Estilos del encabezado (Hero Section) */
         header {
-            background-color: #0D47A1; /* Azul Marino de Seguridad */
-            background-image: linear-gradient(rgba(13, 71, 161, 0.85), rgba(0, 0, 0, 0.85)), url('images/bg-tech.jpg');
+            background-color: #111111; /* Fondo muy oscuro, casi negro */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('images/bg-tech.jpg');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -28,12 +38,12 @@
             padding-bottom: 6rem;
         }
         
-        /* Estilos del Logotipo (Ajuste para la imagen subida) */
+        /* Estilos del Logotipo */
         .logo-unsin {
-             max-width: 250px; /* Tamaño máximo */
+             max-width: 250px;
              height: auto;
-             /* Filtro para mejorar la visibilidad en el fondo oscuro, si es necesario */
-             filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); 
+             /* Realza el logo sobre el fondo oscuro */
+             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15)); 
         }
         
         /* Estilos para el botón principal (Dorado) */
@@ -53,18 +63,31 @@
             color: #000;
         }
 
+        /* 3. Sección de Características */
+        #servicios {
+            background-color: #111111; /* Fondo muy oscuro */
+        }
+        
+        #servicios h2, #servicios h3 {
+            color: #FFFFFF;
+        }
+        
+        #servicios p {
+            color: #CCCCCC; /* Gris claro para el texto secundario */
+        }
+
         /* Estilos para los íconos de características */
         #servicios i {
             color: #0D47A1 !important; /* Azul Marino para íconos */
             padding-bottom: 0.5rem;
         }
         
-        /* Contenedor de la llamada a la acción */
+        /* 4. Contenedor de la llamada a la acción */
         #cta-whatsapp {
-            background-color: #09377A; /* Tono de azul ligeramente diferente */
+            background-color: #000000; /* Negro puro para la CTA */
         }
         
-        /* Estilos del Botón Flotante de WhatsApp */
+        /* Estilos del Botón Flotante de WhatsApp (Sin cambios) */
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -100,6 +123,12 @@
             background-color: #128C7E;
             border-color: #128C7E;
             color: #FFF;
+        }
+
+        /* 5. Pie de Página */
+        footer {
+            background-color: #000000 !important;
+            border-top: 1px solid #333;
         }
     </style>
     </head>
@@ -141,9 +170,9 @@
         </div>
     </header>
 
-    <section id="servicios" class="py-5 bg-light">
+    <section id="servicios" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold text-dark">La Diferencia de la IA en la Seguridad Privada</h2>
+            <h2 class="text-center mb-5 fw-bold">La Diferencia de la IA en la Seguridad Privada</h2>
             <div class="row text-center">
                 
                 <div class="col-md-4 mb-4">
@@ -177,9 +206,9 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-3">
         <div class="container">
-            <p class="mb-0 small">&copy; 2025 UNSIN | Seguridad Privada Inteligente. Todos los derechos reservados.</p>
+            <p class="mb-0 small">&copy; 2024 UNSIN | Seguridad Privada Inteligente. Todos los derechos reservados.</p>
         </div>
     </footer>
 
